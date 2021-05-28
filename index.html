@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">HackerSandBox Survey Form</h1>
+            <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main>
+            <form id="survey-form" action="">
+                <div class="form-group">
+                    <label id="name-label" for="name">Enter your name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Enter your email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                        placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Select your favourite programming language:</p>
+                    <label for="java">
+                        <input type="radio" id="java" name="language" value="java" class="input-radio">Java
+                    </label>
+
+                    <label for="python">
+                        <input type="radio" id="python" name="language" value="python" class="input-radio">Python
+                    </label>
+
+                    <label for="php">
+                        <input type="radio" id="php" name="language" value="php" class="input-radio">PHP
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>In what area would you like to improve:</p>
+
+                    <label for="front-end">
+                        <input type="checkbox" id="front-end" name="improve" value="front-end"
+                            class="input-checkbox">Front-end
+                    </label>
+
+                    <label for="back-end">
+                        <input type="checkbox" id="back-end" name="improve" value="back-endrns"
+                            class="input-checkbox">Back-end
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comments" id="comments" class="input-textarea"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
